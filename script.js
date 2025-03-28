@@ -18,7 +18,7 @@ async function getScores() {
                 game.homeTeam.name + " " + (game.score.fullTime.home || '-') + " - " + (game.score.fullTime.away || '-') + " " + game.awayTeam.name
             ).join('<br>');
         } else {
-            scores.innerHTML = "El FC Barcelona no juega ahora. ¡Próximo partido el domingo!";
+            scores.innerHTML = "El FC Barcelona no juega hoy. ¡Próximo partido el domingo 30 de marzo!";
         }
     } catch (error) {
         document.getElementById('scores').innerHTML = "Error: " + error.message;
